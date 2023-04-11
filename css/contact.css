@@ -1,0 +1,57 @@
+.socials {
+    margin: 20px;
+  }
+  .socials a {
+    color: white;
+    margin: 0 10px;
+    transition: 0.2s linear;
+    transition-property: background-color, color;
+  }
+  .socials a:hover {
+    color: var(--theme-color);
+    transition: 0.2s linear;
+    transition-property: background-color, color;
+  }
+/*
+  .links{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+  }
+  */
+
+  .links{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+  }
+
+  nav{
+    background: lightblue;
+    height: 80px;
+    width: 100%;
+}
+
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+  background{
+    color: whitesmoke;
+  }
+
+  .header-text{
+    margin-top: 20%;
+    font-size: 15px;
+    color: lightblue;
+}

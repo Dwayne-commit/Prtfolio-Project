@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/about.css">
+    <title>About me</title>
+</head>
+<body>
+    <nav><label class="logo">About Me</label></nav>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Aspiring Software Engineer</h1>
+                    <p>Hi my name is Dwayne McMorris I currently live in Jackson, Mississippi 
+                        where I graduated from Jackson State University. At college I decided to become a Computer Engineer. 
+                        After taking a few courses including Computer Science courses I decided that I liked coding especially the language 
+                        Java. After taking more Computer Science courses and learning languages like C++, HTML, JavaScript, CSS, as well as linux
+                        I decided after graduating that I would pursue a career in Software. I applied for jobs on Indeed and was hired by a company named Revature.
+                        There I was placed into a batch and taught coding languages. The training or batch was very similar to a coding bootcamp the training was very 
+                        difficult and included many hours of study. In these trainngs I learned languages like Python, MongoDB, MySQL, Java, Scala, and Angular. 
+                        After graduation I and leaving Revature I decided to continue to pursue a career in Software engineering. <br>
+                        <a href="./resorces/Dwayne McMorris Resume 2021.pdf">My Resume PDF<br></a>
+                            <a href="./resorces/Academic Transcript.pdf">Transcript</a></p>
+                        
+                       <!-- <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div> -->
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><strong><h2>Skills</h2></strong></li>
+                                <li><span>Java</span><br>Building WebApplications</li>
+                                <li><span>MySQL</span><br>Creating Databases and Handiling Information</li>
+                                <li><span>HTML/CSS/JavaScript</span><br>Designing WebPages</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><strong><h2>Experience</h2></strong></li>
+                                <li><span>2023</span><br>Binary Logic Java Trainee</li>
+                                <li><span>2022</span><br>Revature Big Data/Java Full Stack Trainee</li>
+                                <li><span>2021</span><br>Operating Systems Course</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><strong><h2>Education</h2></strong></li>
+                                <li><span>2021</span><br>Bachelors Computer Engineering Jackson State University</li>
+                                <li><span>2015</span><br>High School Diploma Uniondale High School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+ </body>
+</html>
